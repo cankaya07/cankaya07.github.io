@@ -1,0 +1,83 @@
+# Site settings
+site: Can Kaya
+title: Can Blog
+keywords: ephesus, blog
+description: >-
+  Ephesus - Minimalist Jekyll Theme
+lang: en-US
+timezone:  Europe/Istanbul
+repo: https://github.com/onepase/Ephesus # site repo [optional]
+google_verify:      XXX # Put your Google Verification here
+google_analytics:   UA-XXXXXXXX-00 # Put your Google Analytics code
+discus-identifier:  XXX
+
+# Author settings
+author:
+  name: Can Kaya
+  bio: SQL Server Database Administrator <br> Founder <a href="https://aryasoft.com.tr">@aryasoft_tr</a> <br> Consultant, Speaker, Cyclist, Audiophile, /#Docker /#cloud
+  picture: assets/images/cankaya07.jpg 
+  github: cankaya07 # github username
+  twitter: cankaya07 # twitter username
+  facebook: cankaya07 # facebook username
+  instagram: cnky07 # instagram username
+  youtube: https://www.youtube.com/channel/UCr0woKLaKcVzKkRRKZ4NctA # youtube username
+  linkedin: cankaya07 # linkedin username
+  email: myfirstname.mylastname@aryasoft.com.tr # email adress
+
+
+# URL settings
+url: "https://cankaya07.github.io"  # Domain Name of host. [username].github.io for github pages
+permalink: pretty
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+
+exclude:
+  - .jekyll-cache
+  - .obsidian
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
+  - CONTRIBUTING.md
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-relative-links
+paginate: 20
+paginate_path: "/page/:num"
+
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /:slug
+  
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+relative_links:
+  enabled:     true
+  collections: false
