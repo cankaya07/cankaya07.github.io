@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://cankaya07.github.io/sitemap.xml
+Sitemap: https://www.cankaya.net.tr/sitemap.xml
